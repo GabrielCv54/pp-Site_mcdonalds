@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Supermercado+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Kanit';
+    background-color: #252525;
+    background-repeat: no-repeat,space;
+    background-position: right;
+    max-width: 100%;
+    color: white;
+    
+}
+
+header{
+   background-image:  linear-gradient(to right,rgb(131, 131, 131),rgb(168, 20, 0));
+}
+
+
+div#head > h1,h2{
+    display: inline-block;
+}
+
+#logo_mc:hover{
+   background-color: red;
+}
+
+input, button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;  
+}
+
+
+.delivery_form{
+    display: none ;
+    background-color: rgb(189, 189, 189);
+    color: #252525;
+
+}
+
+input[type=text]{
+   background-image: url('imgs/lupa.png');
+    
+}
+
+.delivery_form > input[type=text]:focus{
+    background-color: lightblue;
+}
+
+img#delivery{
+    position: relative;
+     height: 300px;
+     width: 400px;
+     top: 40px;
+}
+
+img#mc_balcao{
+   width: 1024px;
+   width: 100%;
+   border-radius: 15px  50px;
+}
+
+div.mc_restaurante{ 
+    display: flex ;
+     
+}
+
+div > img {
+    height: 300px;
+    max-width: 100%;
+    
+}
+
+
+footer ,a{
+    display: inline-block;
+}
+
+img[alt="youtube"]{
+  width: 32px;
+  height: 32px;
+}
+
+footer{
+    height: 300px;
+    width: 100% ;
+    max-width: 100%;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h2 > a,img.app{
+    width: 100px;
+}
+
+@media (max-width:768px){
+header{
+    text-align: center;
+}
+
+
+
+div.mc_restaurante{
+    display: flex;
+    flex-direction: column;
+}
+
+
+img#mc_balcao{
+    flex-direction: column;
+    align-items: center;
+}
+
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&family=Supermercado+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto' ;
+    background-color: chocolate;
+    
+}
+
+header{
+    background-color: rgb(241, 241, 241);
+     font-weight: bold;
+     font-size: 30px;
+     text-align: center;
+     max-width: 100%;
+}
+
+img#logo:hover{
+    background-color: red;
+}
+
+
+#logo{
+    height: 88px;
+    width: 88px;
+}
+
+#foods{
+    display: flex ;
+    flex-flow: row wrap;
+   /*  flex-direction: row; */
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;;
+}
+
+article > p{  
+    font-weight: bold ;
+    font-family: 'Roboto';
+    text-align: center ;
+}
+
+.menus:hover{
+    transform: scale(1.1);
+}
+
+main{
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(211, 172, 99));
+    row-gap: 50px;
+    
+}
+
+img.menus{
+    height: 250px;
+    width: 350px;
+    border-radius: 50px;
+    height: auto;
+    border: solid rgb(139, 18, 18) 2px;
+    max-width:70%;
+    align-content: space-around;
+}
+
+footer img#direitos_autorais{
+    position: relative;
+}
+
+footer{
+    background-color: rgb(241, 241, 241);
+    padding: 55px; 
+}
