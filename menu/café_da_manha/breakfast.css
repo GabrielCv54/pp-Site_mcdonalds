@@ -29,6 +29,7 @@ article > img{
 .breakfast_foods{
     border: 10px solid transparent;
     border-image: url('imgs/icons8-burguer-48.png') 10 round;
+    background-image: linear-gradient(to bottom, white,rgb(211, 211, 146));
 }
 
 section > img{
