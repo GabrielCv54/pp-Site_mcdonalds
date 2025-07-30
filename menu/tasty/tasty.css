@@ -20,6 +20,19 @@ h1{
     text-align: center;
 }
 
+nav{
+    background-color: red;
+    word-spacing: 10px;
+    color: transparent;
+    padding: 7px;
+
+}
+
+nav > a:hover{
+    color: red;
+    background-color: yellow
+}
+
 h2{
     margin: 25px 15px;
 }
@@ -52,6 +65,7 @@ div.tasty_items{
     display: flex;
     justify-content: space-between;
 }
+
 
 figure > img.tasty{
     max-width: 100%;
