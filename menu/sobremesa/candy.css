@@ -34,6 +34,7 @@ nav{
     background-color: red;
     border: solid yellow;
     word-spacing: 10px;
+    padding: 5px;
 }
 
 nav > a{
@@ -44,6 +45,8 @@ nav > a{
 nav > a:hover{
     color: red;
     background-color: yellow;
+    box-shadow: black 6px 5px;
+    border: 1px black solid;
 }
 
 #img_mc{
@@ -124,6 +127,8 @@ a > img{
 
 @media screen and(max-width:760px){
     section{
-        flex-flow: column wrap;
+        display: flex;
+        flex-wrap: wrap;
+        
     }
 }

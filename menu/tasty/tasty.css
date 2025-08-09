@@ -25,12 +25,18 @@ nav{
     word-spacing: 10px;
     color: transparent;
     padding: 7px;
+   
+}
 
+nav > a{
+    color: yellow;
 }
 
 nav > a:hover{
     color: red;
-    background-color: yellow
+    background-color: yellow;
+    box-shadow: 5px 4px black;
+    border: 1px black solid;
 }
 
 h2{

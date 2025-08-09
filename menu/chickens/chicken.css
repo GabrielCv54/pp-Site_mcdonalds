@@ -24,10 +24,14 @@ nav{
     border: #ffff00 solid 5px;
     background-color: var(--navColorBackground);
     word-spacing: 20px;
+    padding: 5px;
 }
 
 nav > a:hover{
-    background-color: #252525;
+    box-shadow: 4px 5px black;
+    background-color: yellow;
+    color: red;
+    border: 1px black solid;
 }
 
 figcaption{

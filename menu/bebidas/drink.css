@@ -18,8 +18,9 @@ header > a > img:hover{
 
 nav{
     background-color: red;
-    word-spacing:5px;
+    word-spacing: 35px;
      padding: 10px;
+     max-width: 100%;
 }
 
 a{
@@ -30,6 +31,8 @@ a{
 nav > a:hover{
     background-color: yellow;
     color: red;
+    border: 1px solid black;
+    box-shadow: 4px 5px black;
 }
 
 main{
@@ -39,6 +42,10 @@ main{
 figure > a> img{
    width: 180px;
    border-radius: 15px;
+}
+
+figure a > img:hover{
+        transform: scale(1.2);
 }
 
 article.drinks > figure>  a > img{
@@ -53,6 +60,14 @@ figcaption{
 footer{
     height: 350px;
     background-color: rgb(75, 75, 75);
-    width: 900px;
-    
+    max-width: 100%;
+    font-weight: bolder;
+}
+
+@media screen and(max-width:760px){
+    article.drinks > figure{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

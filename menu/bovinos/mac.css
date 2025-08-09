@@ -12,6 +12,22 @@ h1{
   text-align: center;
 }
 
+nav{
+    background-color: red;
+    padding: 10px;
+    word-spacing: 20px;
+}
+
+nav > a{
+   color: yellow;
+}
+
+nav > a:hover{
+    color: red;
+    background-color: yellow;
+    box-shadow: 4px 5px black;
+}
+
 main{     
     background-image: linear-gradient(to top, white,rgb(180, 180, 95));
 }
