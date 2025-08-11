@@ -20,7 +20,7 @@ header > a > img:hover{
 
 nav{
     background-color: red;
-    max-width: 100%;
+    width: 100%;
     padding: 4px;
     word-spacing: 15px;
     font-weight: bolder;
@@ -34,13 +34,15 @@ a{
 nav > a:hover{
     background-color: yellow;
     color: red;
+    box-shadow: 5px 6px black;
 }
 
 article{
     border: 2px rgb(131, 131, 131) solid;
     width: 500px;
-
+    max-width: 100%;
 }
+
 
 section{
     display: grid;
@@ -49,11 +51,11 @@ section{
 }
 
 
-table{
+/* table{
     width: 100%;
-}
+} */
 
-table > tr>th{
+table > tr > th{
     width: 10px;
 }
 
@@ -78,20 +80,63 @@ td > img{
     width: 40px;
 }
 
-@media (max-width:768px) {
-     article.tasty1{
+@media screen and (max-width:760px){
+  article, table{
+    border:  2px solid rgb(126, 72, 2);
+    align-self: center;
+}
+  
+    .t1{
         display: flex;
         flex-direction: column;
-    
+        align-items: center;
+        width: 100%;
      }
 
-     article.tasty1 > table{
+     article.tasty1 > table {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        width: 300px;
+        flex-direction: row;
+        
+        
      }
 
      article.alergia{
         display: none;
      }
+}
+
+@media screen and(max-width:750px){
+    article.tasty1{
+        display: flex;
+        align-items: center;
+    }
+
+    article.tasty1 > table{
+        display: none;
+    }
+
+
+}
+
+@media screen and(max-width:900px){
+   article.tasty1{
+     display: flex;
+     flex-direction: column;
+     max-width: 100%;
+     grid-template-columns: repeat(1,3fr);
+   }
+
+   article.tasty1 > table{
+    display: normal;
+   }
+   
+   article.alergia{
+     display: none;
+   }
+
+}
+
+footer{
+    background-color: #636262;
 }
