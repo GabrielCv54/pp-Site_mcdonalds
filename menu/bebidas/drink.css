@@ -20,12 +20,14 @@ nav{
     background-color: red;
     word-spacing: 35px;
      padding: 10px;
-     max-width: 100%;
+     width: 100%;
+     border: 2px solid yellow;
 }
 
 a{
      text-decoration: none;
      color: yellow;
+    
 }
 
 nav > a:hover{
@@ -37,15 +39,23 @@ nav > a:hover{
 
 main{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: khaki;
+    max-width: 100%;
+    width: 100%;
 }
+
 
 figure > a> img{
    width: 180px;
    border-radius: 15px;
+
 }
 
-figure a > img:hover{
+figure > a > img:hover{
         transform: scale(1.2);
+        transition: 0.3 ease transform;
 }
 
 article.drinks > figure>  a > img{
@@ -61,13 +71,18 @@ footer{
     height: 350px;
     background-color: rgb(75, 75, 75);
     max-width: 100%;
+    width: 100%;
     font-weight: bolder;
 }
 
-@media screen and(max-width:760px){
-    article.drinks > figure{
+@media only screen and(max-width:768px){  
+    main > article> figure {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-}
+     
+    article.drinks{
+        align-items: center;
+    }
+}  
