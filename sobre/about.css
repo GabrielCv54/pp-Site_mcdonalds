@@ -2,7 +2,7 @@
 
 
 body{
-    background-color: chocolate;
+   background-color: chocolate;
    font-family: 'Rubik';
    padding: 0;
    margin: 0;
@@ -13,6 +13,7 @@ nav{
     word-spacing: 5px;
     padding: 6px;
     max-width: 100%;
+    border: yellow solid 2px;
 }
 
 nav > a{
@@ -23,6 +24,13 @@ nav > a{
 nav >a:hover{
     background-color: yellow;
     color: red;
+    border: 1px  black solid;
+    box-shadow: black 2px 3px;
+}
+
+a:hover > img[alt='logo']{
+     background-color: red;
+
 }
 
 section{
