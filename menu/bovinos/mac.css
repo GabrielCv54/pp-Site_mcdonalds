@@ -16,6 +16,7 @@ nav{
     background-color: red;
     padding: 10px;
     word-spacing: 20px;
+    border: 2px yellow solid;
 }
 
 nav > a{
@@ -41,21 +42,12 @@ figure > img.mac{
     border: 5px red inset;
     max-width: 100%;
     max-height: 100%;
+
 }
 
+figure > img{
+    transition: transform ease 0.1s;
 
-@media only screen and (max-width:650px){
-    .mac_itens{
-        flex-direction: column;
-        align-items: center;
-        
-
-    }
-
-    figure > img.mac{
-        width: 90%;
-        margin-bottom: 40px;
-    }
 }
 
 figure > img:hover{
@@ -82,9 +74,41 @@ footer > a > img.app{
     width: 100px;
 }
 
+img#burguer{
+    position: absolute;
+    right: 0;
+}
+
+aside{
+    font-family: serif;
+    background-color: yellow;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px 5px;
+}
+
+a#table{
+  font-weight: bold;
+}
+
 footer{
     background-color: gray;
     height: 450px;
     display: flexbox;
 }
 
+@media only screen and (max-width:650px){
+    .mac_itens{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    figure > img.mac{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
