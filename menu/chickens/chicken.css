@@ -76,6 +76,23 @@ div.apps > a > img{
     width: 100px;
 }
 
+aside{
+    background-color: yellow;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width:  2px 5px;
+}
+
+a#table{
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    font-family: serif;
+}
+
 footer{
     font-family: 'Lato';
     background-color: #4d4c4c;
