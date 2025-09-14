@@ -19,6 +19,24 @@ header{
    background-image:  linear-gradient(to right,rgb(131, 131, 131),rgb(168, 20, 0));
 }
 
+nav{
+    background-color: red;
+    word-spacing: 15px;
+    border: 2px yellow solid;
+    padding: 5px;
+}
+
+nav > a {
+    color: yellow;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    background-color: yellow;
+    color: red;
+    border: 1px solid black;
+    box-shadow: 2px 3px black;
+}
 
 div#head > h1,h2{
     display: inline-block;

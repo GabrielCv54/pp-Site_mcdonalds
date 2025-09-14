@@ -11,17 +11,21 @@
 </head>
 <body>
     <header>
-        <a href="/página inicial/index.html"><img src="imgs/icons8-mcdonald's-96.png" alt="logo_mc" id="logo_mc"></a>
+        <a href="/página_inicial/index.html"><img src="imgs/icons8-mcdonald's-96.png" alt="logo_mc" id="logo_mc"></a>
         <div id="h">
             <h1>Área de Delivery</h1> 
              <h3>Nossos lanches na palma de sua mão,Basta apenas pedir!🛵</h3>
         </div>
     </header>
+    <nav>
+        <a href="/menu/menu.html" class="nav">Menu</a>
+        <a href="/sobre/about.html" class="nav">Sobre</a>
+    </nav>
 
     <main>
         <section>
             <form action="">
-                <input type="button" value="Fazer pedido"  id="fazerPedido" onclick="Pedido()">
+                <input type="button" value="Fazer pedido"  id="fazerPedido" >
             </form>
         <div class="mc_restaurante">
          <img src="imgs/delivery-man-riding-red-scooter-600nw-1448504840.webp" alt="delivey">
@@ -32,16 +36,20 @@
 
         <div class="delivery_form">
         <fieldset>
-            <label for="endereco" >Endereço:</label>
-            <input type="text" required>
-            <label for="numero">   Número: </label>
-            <input type="number"><br> <br>
+            <label for="ped">Digite aqui o que deseja</label>
+            <input type="text" name="" id="ped"><br>
+            <label for="endereco">Endereço* :</label>
+            <input type="text" id="address" required>
+            <label for="numero">   Número* :</label>
+            <input type="number" id="number"><br> <br>
                 <label for="adicionais">Informações adicionais</label><br>
-                 <textarea name="mensagem" id="message" rows="5" cols="20"></textarea> <br>
+                 <textarea name="mensagem" id="message" rows="5" cols="20" id="infoAdd"></textarea> <br>
             <label for="Complemento">Complemento:</label>
-            <input type="text">
-            <button type="submit">Enviar</button>
+            <input type="text" id="complement">
+            <button type="submit" id="invite">Enviar</button>
         </fieldset>
+
+        <div id="order"></div>
         </div>
     </section>
     </main><br><br>
