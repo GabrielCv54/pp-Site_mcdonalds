@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&family=Supermercado+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 
-*{
+body{
    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,7 +22,8 @@ header > a > img:hover{
 
 nav{
     background-color: red;
-    width: 100%;
+    max-width: 100%;
+    width: 5000px;
     padding: 4px;
     word-spacing: 15px;
     font-weight: bolder;
@@ -50,10 +53,11 @@ section{
     width: 100%;
 }
 
+main{
+    background-image: linear-gradient(to bottom , white,rgb(180,180,95));
 
-/* table{
-    width: 100%;
-} */
+}
+
 
 table > tr > th{
     width: 10px;
@@ -63,12 +67,16 @@ table > tr > th{
     width: 500px;
 }
 
+article.alergia{
+    background-image: linear-gradient(to bottom,white,rgb(180,180,90));
+}
+
 article.tasty1 > table{
     display: flex;
 }
 
 tr > th{
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(107, 107, 107);
 }
 
 tr{
@@ -80,10 +88,20 @@ td > img{
     width: 40px;
 }
 
-@media screen and (max-width:760px){
-  article, table{
-    border:  2px solid rgb(126, 72, 2);
-    align-self: center;
+footer{
+    background-color: #636262;
+    width: 100%;
+}
+
+@media (max-width:780px){
+   body{
+    margin: 0;
+    padding: 0;
+   }
+
+  article.tasty1 , table{
+    border:  2px solid rgb(94, 54, 2);
+    align-content: center;
 }
   
     .t1{
@@ -93,12 +111,11 @@ td > img{
         width: 100%;
      }
 
-     article.tasty1 > table {
-        display: flex;
+     article.tasty11{
+        display: none;
         width: 300px;
         flex-direction: row;
-        
-        
+          
      }
 
      article.alergia{
@@ -106,37 +123,51 @@ td > img{
      }
 }
 
-@media screen and(max-width:750px){
+@media (max-width:1030px){
+   body{
+    margin:  0;
+    padding: 0;
+   }
+
     article.tasty1{
         display: flex;
         align-items: center;
     }
 
-    article.tasty1 > table{
+    article.tasty11{
         display: none;
+    }
+
+   section > article.tasty1 {
+        border: 4px rgb(77, 31, 31) solid;
+        max-width: 100%;
+    }
+
+    footer{
+        max-width: 100%;
     }
 
 
 }
 
-@media screen and(max-width:900px){
+
+
+@media (max-width:1370px){
    article.tasty1{
      display: flex;
      flex-direction: column;
      max-width: 100%;
-     grid-template-columns: repeat(1,3fr);
+    
    }
 
-   article.tasty1 > table{
-    display: normal;
+   article.tasty11 > table {
+    border: 1px solid rgb(97, 64, 64);
+    display: normal !important;
    }
    
    article.alergia{
-     display: none;
+     display: none !important;
    }
 
 }
 
-footer{
-    background-color: #636262;
-}
