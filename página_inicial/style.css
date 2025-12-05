@@ -43,9 +43,18 @@ input,text {
 
 .foto{
    height: 300px;
-   width: 50%;
    border-radius: 100px;
-   display: inline;
+   display: none;
+   max-width: 100%;
+}
+
+.foto.first{
+    display: block;
+}
+
+.carousel{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 img#img_mc:hover{
@@ -160,4 +169,11 @@ footer{
     font-family: sans-serif;
     background-color: rgb(77, 77, 77);
 
+}
+
+@media only screen and (max-width:450px){
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
